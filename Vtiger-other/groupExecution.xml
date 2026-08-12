@@ -1,0 +1,23 @@
+<suite name="Suite">
+	<test name="Test">
+
+		<groups>
+			<run>
+				<include name="smoke" />
+			</run>
+		</groups>
+		<parameter name="browser" value="chrome" />
+		<classes>
+			<class name="crm.organization.CreateOrgTest" />
+			<class name="crm.cases.CreateCaseTest" />
+			<class name="crm.campaign.CreateCampaignTest" />
+			<class name="crm.vendor.CreateVendorTest" />
+			<class name="crm.lead.CreateLeadTest" />
+			<class name="crm.activity.CreateActivityTest" />
+			<class name="crm.product.CreateProductTest" />
+			<class name="crm.login.LoginTest" />
+			<class name="crm.opportunity.CreateOppTest" />
+			<class name="crm.contact.CreateContactTest" />
+		</classes>
+	</test> <!--Test -->
+</suite> <!--Suite -->

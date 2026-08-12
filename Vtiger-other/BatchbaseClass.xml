@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite name="Suite">
+	<test thread-count="5" name="Test">
+			<parameter name="browser" value="chrome" />
+		<classes>
+			<class name="crm.organization.CreateOrgTest" />
+			<class name="crm.cases.CreateCaseTest" />
+			<class name="crm.campaign.CreateCampaignTest" />
+			<class name="crm.vendor.CreateVendorTest" />
+			<class name="crm.lead.CreateLeadTest" />
+			<class name="crm.activity.CreateActivityTest" />
+			<class name="crm.product.CreateProductTest" />
+			<class name="crm.login.LoginTest" />
+			<class name="crm.opportunity.CreateOppTest" />
+			<class name="crm.contact.CreateContactTest" />
+		</classes>
+	</test> <!--Test -->
+</suite> <!--Suite -->

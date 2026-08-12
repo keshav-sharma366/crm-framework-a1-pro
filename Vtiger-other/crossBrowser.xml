@@ -1,0 +1,48 @@
+
+<suite name="Cross Browser Suite" parallel="tests" thread-count="3">
+
+	<listeners>
+		<listener class-name="listeners_utility.List_Imp"></listener>
+	</listeners>
+
+	<test name="Chrome Browser">
+		<parameter name="browser" value="chrome" />
+
+		<classes>
+			<class name="crm.organization.CreateOrgTest" />
+			<class name="crm.cases.CreateCaseTest" />
+			<class name="crm.campaign.CreateCampaignTest" />
+		</classes>
+	</test>
+
+
+	<test name="Edge Browser">
+		<parameter name="browser" value="edge" />
+		<groups>
+			<run>
+				<exclude name="smoke" />
+			</run>
+		</groups>
+		<classes>
+			<class name="crm.vendor.CreateVendorTest" />
+			<class name="crm.lead.CreateLeadTest" />
+			<class name="crm.activity.CreateActivityTest" />
+		</classes>
+	</test>
+
+	<test name="Firefox Browser">
+		<parameter name="browser" value="firefox" />
+		<groups>
+			<run>
+				<include name="regression" />
+			</run>
+		</groups>
+		<classes>
+			<class name="crm.product.CreateProductTest" />
+			<class name="crm.login.LoginTest" />
+			<class name="crm.opportunity.CreateOppTest" />
+			<class name="crm.contact.CreateContactTest" />
+		</classes>
+	</test>
+
+</suite>

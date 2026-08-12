@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite thread-count="3" parallel="tests" name="Failed suite [Cross Browser Suite]">
+  <listeners>
+    <listener class-name="listeners_utility.List_Imp"/>
+  </listeners>
+  <test thread-count="3" parallel="tests" name="Chrome Browser(failed)">
+    <parameter name="browser" value="chrome"/>
+    <classes>
+      <class name="crm.campaign.CreateCampaignTest">
+        <methods>
+          <include name="tearDown"/>
+          <include name="login"/>
+          <include name="setUp"/>
+          <include name="CampaignTest"/>
+          <include name="logout"/>
+        </methods>
+      </class> <!-- crm.campaign.CreateCampaignTest -->
+      <class name="crm.organization.CreateOrgTest">
+        <methods>
+          <include name="login"/>
+          <include name="tearDown"/>
+          <include name="setUp"/>
+          <include name="OrgTest"/>
+          <include name="logout"/>
+        </methods>
+      </class> <!-- crm.organization.CreateOrgTest -->
+      <class name="crm.cases.CreateCaseTest">
+        <methods>
+          <include name="tearDown"/>
+          <include name="login"/>
+          <include name="setUp"/>
+          <include name="CaseTest"/>
+          <include name="logout"/>
+        </methods>
+      </class> <!-- crm.cases.CreateCaseTest -->
+    </classes>
+  </test> <!-- Chrome Browser(failed) -->
+</suite> <!-- Failed suite [Cross Browser Suite] -->

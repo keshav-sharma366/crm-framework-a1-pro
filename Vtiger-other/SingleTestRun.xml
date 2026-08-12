@@ -1,0 +1,11 @@
+<suite name="Cross Browser Suite" parallel="tests" thread-count="3">
+
+	<test name="Chrome Browser">
+		<parameter name="browser" value="chrome" />
+		<classes>
+			<class name="crm.campaign.CreateCampaignTest" />
+			<class name="crm.activity.CreateActivityTest" />
+			<class name="crm.opportunity.CreateOppTest" />
+		</classes>
+	</test>
+</suite>

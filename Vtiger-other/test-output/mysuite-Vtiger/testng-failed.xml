@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite parallel="tests" name="Failed suite [mysuite-Vtiger]">
+  <test thread-count="5" parallel="tests" name="Thread3(failed)">
+    <classes>
+      <class name="crm.activity.CreateActivityTest">
+        <methods>
+          <include name="ActivityTest"/>
+        </methods>
+      </class> <!-- crm.activity.CreateActivityTest -->
+      <class name="crm.campaign.CreateCampaignTest">
+        <methods>
+          <include name="CampaignTest"/>
+        </methods>
+      </class> <!-- crm.campaign.CreateCampaignTest -->
+    </classes>
+  </test> <!-- Thread3(failed) -->
+</suite> <!-- Failed suite [mysuite-Vtiger] -->
