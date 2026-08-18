@@ -1,4 +1,4 @@
-<suite name="Cross Browser Suite" parallel="tests" thread-count="3">
+           <suite name="Cross Browser Suite" parallel="tests" thread-count="3">
 
 	<test name="Chrome Browser">
 		<parameter name="browser" value="chrome" />

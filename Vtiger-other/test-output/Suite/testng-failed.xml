@@ -22,6 +22,15 @@
           <include name="logout"/>
         </methods>
       </class> <!-- crm.activity.CreateActivityTest -->
+      <class name="crm.organization.CreateOrgTest">
+        <methods>
+          <include name="tearDown"/>
+          <include name="login"/>
+          <include name="setUp"/>
+          <include name="OrgTest"/>
+          <include name="logout"/>
+        </methods>
+      </class> <!-- crm.organization.CreateOrgTest -->
     </classes>
   </test> <!-- Test(failed) -->
 </suite> <!-- Failed suite [Suite] -->

@@ -21,12 +21,13 @@ import object_repository.LoginPage;
 public class BaseClass {
 	public WebDriver driver = null;
 	public static WebDriver sdriver = null;
-	@Parameters("browser")
+	//@Parameters("browser")
 	
 	@BeforeClass
-	public void setUp(String browser) throws IOException, ParseException {
+	public void setUp() throws IOException, ParseException { //String browser
 //		FileUtility fUtil = new FileUtility();
 //		String browser = fUtil.getDataFromJsonFile("bro");
+		String browser="chrome";
 
 		if (browser.equals("chrome")) {
 			driver = new ChromeDriver();
